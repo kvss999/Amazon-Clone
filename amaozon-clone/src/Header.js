@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { AiFillShopping } from "react-icons/ai";
 import { useStateValue } from './StateProvider';
 import Checkout from './Checkout';
+import {auth} from './firebase.js';
 function Header() {
   const [ {basket,user}] = useStateValue();
   const login = () => {
